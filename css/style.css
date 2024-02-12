@@ -12,7 +12,7 @@
   --light-grey: hsl(30, 18%, 87%);
   --wenge-brown: hsl(30, 10%, 34%);
   --dark-charcoal: hsl(24, 5%, 18%);
-  --font-size-paragraph: 16px;
+  --font-size-paragraph: 1em;
   --outfit: "Outfit", sans-serif;
   --young-serif: "Young Serif", serif;
 }
@@ -28,8 +28,8 @@ body {
 
 .container {
   background-color: var(--white);
-  margin: 140px;
-  border-radius: 20px;
+  margin: 145px;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   width: 735px;
@@ -50,9 +50,9 @@ body {
 .description h1 {
   color: var(--dark-charcoal);
   font-family: var(--young-serif);
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: 400;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .description p {
@@ -61,7 +61,7 @@ body {
   color: var(--wenge-brown);
   font-size: var(--font-size-paragraph);
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5em;
 }
 
 .description .details {
@@ -73,9 +73,9 @@ body {
   color: var(--dark-charcoal);
 }
 
-.description .details h3 {
+.description .details h2 {
   margin-left: 3px;
-  font-size: 20px;
+  font-size: 1.25em;
   color: var(--dark-raspberry);
 }
 
@@ -90,7 +90,7 @@ body {
 }
 
 .description .details li::marker {
-  font-size: 12px;
+  font-size: 0.8em;
   color: var(--dark-raspberry);
 }
 
@@ -100,7 +100,7 @@ body {
   color: var(--nutmeg);
   font-family: var(--young-serif);
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.7em;
 }
 
 .ingredients ul {
@@ -116,7 +116,7 @@ body {
 }
 
 .ingredients li::marker {
-  font-size: 12px;
+  font-size: 0.8em;
   color: var(--nutmeg);
 }
 
@@ -135,12 +135,12 @@ hr {
 }
 
 .instructions li {
-  line-height: 24px;
+  line-height: 1.5em;
   margin-bottom: -4px;
 }
 
 .instructions li::marker {
-  font-size: 16px;
+  font-size: 1em;
   color: var(--nutmeg);
   font-family: var(--outfit);
   font-weight: 700;
@@ -186,10 +186,6 @@ table .custom-tr {
   border-bottom: 1px solid var(--light-grey);
 }
 
-.attribution {
-  padding: 30px;
-}
-
 @media only screen and (max-width: 750px) {
   .container {
     margin: 0px;
@@ -204,12 +200,7 @@ table .custom-tr {
 
   .description h1 {
     margin-top: 30px;
-    font-size: 35px;
-    line-height: 35px;
-  }
-
-  .attribution{
-    text-align: center;
-    line-height: 25px;
+    font-size: 2em;
+    line-height: 1.3em;
   }
 }
